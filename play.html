@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <title>Guess sound</title>
+  <script defer src="bundle.c4f87b1b1ba38750ded0.js"></script></head>
+
+  <body>
+    <header class="header">
+      <div class="header-wrapper container">
+        <a class="logo" href="./index.html">Birds sound</a>
+        <div class="score">
+          <h5 class="score-title">&nbsp;</h5>
+          <span class="current-score"></span>
+        </div>
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="list-item">
+              <a class="item-link" href="./index.html">Home</a>
+            </li>
+            <li class="list-item">
+              <a class="item-link" href="./play.html">Play</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="lang" class="language"></div>
+      </div>
+    </header>
+    <main class="game">
+      <div class="container">
+       
+        <section class="questions">
+          <ul class="questions-list">
+            <li class="questions-list-item active"></li>
+            <li class="questions-list-item"></li>
+            <li class="questions-list-item"></li>
+            <li class="questions-list-item"></li>
+            <li class="questions-list-item"></li>
+            <li class="questions-list-item"></li>
+          </ul>
+         
+        </section>
+        <section class="current">
+          <div class="current-question-wrapper">
+            <div class="current-bird-img"></div>
+            <div class="current-bird-audio">
+              <h3 class="current-bird-title">********</h3>
+              <div class="audio-loading">Loading....</div>
+              <div class="audio-player hidden">
+                <div class="controls">
+                  <div id="button-play-question" class="playback-button"></div>
+                  <div class="timebar">
+                    <input type="range" min="0" max="1" value="0" class="timebar-bar" step="0.01" id="timebar-question"> 
+                    <div class="timebar-time-info">
+                      <div class="current-time question">00:00</div>
+                      <div class="duration-time question">00:00</div>
+                    </div>
+                    
+                    </div><div class="volume-container">
+                      <div class="volume-button">
+                        <div class="volume"></div>
+                      </div>
+        
+                      <div class="volume-slider">
+                        <input
+                          type="range"
+                          min="0"
+                          max="1"
+                          value="0.5"
+                          class="slider"
+                          step="0.1"
+                          id="questionVolume"
+                        />
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="variants container">
+          <div class="answers">
+            <ul class="answers-list"></ul>
+          </div> 
+         
+          <div class="chosen-bird">
+            <p class="game-description">
+            
+            </p>
+         <div class="chosen-bird-wrapper hidden">
+          <div class="chosen-bird-title">
+            <div class="chosen-bird-img"></div>
+              <div class="chosen-bird-main">
+                <h5 class="chosen-bird-name"></h5>
+                <p class="chosen-bird-species"></p>
+                <div class="audio-loading">Loading....</div>
+                <div class="chosen-audio-player hidden">
+              <div class="controls">
+                <div id="button-play-answer"  class="playback-button"></div>
+                <div class="timebar">
+                  <input type="range" min="0" max="1" value="0" class="timebar-bar" step="0.01" id="timebar-answer"> 
+                  <div class="timebar-time-info">
+                    <div class="current-time answer">00:00</div>
+                    <div class="duration-time answer">00:00</div>
+                  </div>
+                </div>
+                  <div class="volume-container">
+                    <div class="volume-button">
+                      <div class="volume"></div>
+                    </div>
+                      <div class="volume-slider">
+                      <input
+                        type="range"
+                        min="0"
+                        max="1"
+                        value="0.5"
+                        class="slider"
+                        step="0.1"
+                        id="answerVolume"
+                      />
+                    </div>
+                    </div>
+                </div> 
+              </div>
+              </div>
+            </div>
+             <div class="chosen-bird-description">
+           </div>
+          </div> 
+        </div>  
+        
+        </section>
+      <button class="next button"></button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="my-links">
+          <a
+            class="link-item github"
+            href="https://github.com/Kristy-user"
+            target="_blank"
+          ></a>
+          <a
+            class="link-item rss"
+            href="https://rs.school/js/"
+            target="_blank"
+          ></a>
+        </div>
+        <div class="license">
+          <p>All Rights Reserved © Birds Sound, 2022</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
